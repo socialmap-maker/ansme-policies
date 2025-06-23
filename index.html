@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnsMe - Policies</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📬 AnsMe Policies</h1>
+            <p class="subtitle">Your privacy and rights matter to us</p>
+        </header>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h2>Privacy Policy</h2>
+                <p>Learn how we collect, use, and protect your data.</p>
+                <a href="privacy/" class="btn">Read Privacy Policy</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🗑️</div>
+                <h2>Account Deletion</h2>
+                <p>Learn the steps to permanently delete your account and all associated data.</p>
+                <a href="delete-account/" class="btn btn-danger">Request Account Deletion</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>These policies are prepared in compliance with Google Play Store requirements.</p>
+            <p>Last updated: <span id="update-date"></span></p>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US');
+    </script>
+</body>
+</html>
